@@ -1,0 +1,122 @@
+body {
+    
+    background-color:#FBFDFA;
+    /* linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg); */
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 600;
+    position: relative;
+    height: 100vh;
+    }
+
+
+p{
+        font-family: 'Ranchers', cursive;
+        font-size: 65px;
+        color: #152129;
+        text-align: center;
+        /* font-style: bold; */
+        text-shadow:2px 4px  #F0AF35;
+    }
+   
+    #rule1{
+   position: absolute;
+   top:17%;
+   left:10%;
+   height:320px;
+   width:320px;
+   background-color: antiquewhite;
+   box-shadow: 10px 20px 50px #D54212;
+   border-radius: 20px;
+   }
+.r1{
+    font-family: 'PT Sans Narrow', sans-serif;
+   font-size:25px;
+   text-shadow: none;
+   text-align: left;
+  padding: 10px;
+  color: #D54212;
+}
+#rule2{
+    position: absolute;
+    top:20%;
+    left:35%;
+    height:200px;
+    width:500px;
+    background-color: #BDDCC7;
+    box-shadow: 10px 20px 50px #5A9048;
+    border-radius: 20px;
+}
+
+#rule3{
+    position: absolute;
+    top:60%;
+    left:5%;
+    height:200px;
+    width:380px;
+    background-color: #F2DC9B;
+    box-shadow: 10px 20px 50px #EF9348;
+    border-radius: 20px;
+}
+
+#rule4{
+    position: absolute;
+    top:50%;
+    left:35%;
+    height:250px;
+    width:380px;
+    background-color: #E6B47A;
+    box-shadow: 10px 20px 50px #D9BF32;
+    border-radius: 20px;
+}
+#rule5{
+    position: absolute;
+    top:20%;
+    left:75%;
+    height:350px;
+    width:300px;
+    background-color: #F9F9F7;
+    box-shadow: 10px 20px 50px #E5543C;
+    border-radius: 20px;
+}
+.dir{
+    font-family: 'Ranchers', cursive;
+    font-size: 35px;
+    text-align:top;
+    text-shadow: 0px 5px 10px #AFC6BA;
+    color: #D04F4F;
+}
+ 
+.img{
+    background: none;
+    height: 100px;
+    width: 100px;
+    margin-left:35%;
+   text-align: center;
+}
+.imgSW{
+    transform: rotate(45deg);
+}
+#start{
+    position: absolute;
+    top:70%;
+    left:68%;
+    height:100px;
+    width:350px;
+    background-color: #2DD1B0;
+    box-shadow: 10px 20px 50px #6FBFDE;
+    border-radius: 20px;
+    font-family: 'Ranchers', cursive;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 0px 5px 10px #FBFDFA;
+}
+
+#go{
+    font-family: 'Ranchers', cursive;
+    font-size: 110px;
+    padding-top: 40px;
+    padding-left:20px ;
+    text-shadow: 0px 5px 10px #FBFDFA;
+}

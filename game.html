@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+        <link type="text/css" rel="stylesheet" href="game.css">
+        <title>Avoid That Corner</title>
+    </head>
+
+    <body>
+          <img src="src/img3.png" id="p1">
+          
+         <img src="src/img10.png" id="p2">
+           
+           <div class="character c1" onclick="selectChar('1')"><img src="src/img1.png"></div>
+           <div class="character c2" onclick="selectChar('2')"><img src="src/img2.png"></div>
+           <div class="character c3" onclick="selectChar('3')"><img src="src/img3.png"></div>
+           <div class="character c4" onclick="selectChar('4')"><img src="src/img4.png"></div>
+           <div class="character c5" onclick="selectChar('5')"><img src="src/img5.png"></div>
+           <div class="character c6" onclick="selectChar('6')"><img src="src/img6.png"></div>
+           <div class="character c7" onclick="selectChar('7')"><img src="src/img7.png"></div>
+           <div class="character c8" onclick="selectChar('8')"><img src="src/img8.png"></div>
+           <div class="character c9" onclick="selectChar('9')"><img src="src/img9.png"></div>
+           <div class="character c10" onclick="selectChar('10')"><img src="src/img10.png"></div>
+           <div class="character c11" onclick="selectChar('11')"><img src="src/img11.png"></div>
+           <div class="character c12" onclick="selectChar('12')"><img src="src/img12.png"></div>
+           <div class="character c13" onclick="selectChar('13')"><img src="src/img13.png"></div>
+           <div class="character c14" onclick="selectChar('14')"><img src="src/img14.png"></div>
+           <div class="character c15" onclick="selectChar('15')"><img src="src/img15.png"></div>
+           <div class="character c16" onclick="selectChar('16')"><img src="src/img16.png"></div>
+           <div class="character c17" onclick="selectChar('17')"><img src="src/img17.png"></div>
+           <div class="character c18" onclick="selectChar('18')"><img src="src/img18.png"></div>
+           <div class="character c19" onclick="selectChar('19')"><img src="src/img19.png"></div>
+           <div class="character c20" onclick="selectChar('20')"><img src="src/img20.png"></div>
+           <div class="character c21" onclick="selectChar('21')"><img src="src/img21.png"></div>
+           <div class="character c22" onclick="selectChar('22')"><img src="src/img22.png"></div>
+           <div class="character c23" onclick="selectChar('23')"><img src="src/img23.png"></div>
+           <div class="character c24" onclick="selectChar('24')"><img src="src/img24.png"></div>
+           <div class="character c25" onclick="selectChar('25')"><img src="src/img25.png"></div>
+           <div class="character c26" onclick="selectChar('26')"><img src="src/img26.png"></div>
+           <div class="character c27" onclick="selectChar('27')"><img src="src/img27.png"></div>
+           <div class="character c28" onclick="selectChar('28')"><img src="src/img28.png"></div>
+           <div class="character c29" onclick="selectChar('29')"><img src="src/img29.png"></div>
+           <div class="character c30" onclick="selectChar('30')"><img src="src/img30.png"></div>
+           <div class="character c31" onclick="selectChar('31')"><img src="src/img31.png"></div>
+           <div class="character c32" onclick="selectChar('32')"><img src="src/img32.png"></div>
+           <div class="character c33" onclick="selectChar('33')"><img src="src/img33.png"></div>
+           <div class="character c34" onclick="selectChar('34')"><img src="src/img34.png"></div>
+           <div class="character c35" onclick="selectChar('35')"><img src="src/img35.png"></div>
+           <div class="character c36" onclick="selectChar('36')"><img src="src/img36.png"></div>
+           <div class="character c37" onclick="selectChar('37')"><img src="src/img37.png"></div>
+          
+          <div class="start">
+            
+              <!-- <input type="text" id="player1" placeholder="Player 1"> -->
+             <div id="player1"><p >Choose a character </p></div>
+               <!-- <input type="text" id="player2" placeholder="Player 2"> -->
+             <div><p id="player2">Player 1</p></div>
+              <div style="text-align:center ; margin-top:60px ; font-weight:800; font-size:60px">PLAY</div>
+              <button class="start-btn"> <img src="src/play.png" class="play">  </button>
+              
+          </div>
+          
+          <div class="WinLose">
+             <div class="wl" ><img id="p" style="height:130px; width:130px;" src="src/img37.png"></div>
+             <div id="win"><p id="win"></p></div>
+           </div>
+
+        <div class="wrapper">
+            <table >
+                <tr>
+                  <td class="box box11" onclick="dothis('1','1')"><img src="src/token.png" class="token-11 coin"></td>
+                  <td class="box box12" onclick="dothis('1','2')"><img src="src/token.png" class="token-12 coin"></td>
+                  <td class="box box13" onclick="dothis('1','3')"><img src="src/token.png" class="token-13 coin"></td>
+                  <td class="box box14" onclick="dothis('1','4')"><img src="src/token.png" class="token-14 coin"></td>
+                  <td class="box box15" onclick="dothis('1','5')"><img src="src/token.png" class="token-15 coin"></td>
+                  <td class="box box16" onclick="dothis('1','6')"><img src="src/token.png" class="token-16 coin"></td>
+                  <td class="box box17" onclick="dothis('1','7')"><img src="src/token.png" class="token-17 coin"></td>
+                  <td class="box box18" onclick="dothis('1','8')"><img src="src/token.png" class="token-18 coin"></td>
+                  </tr>
+                <tr>
+                  <td class="box box21" onclick="dothis('2','1')"><img src="src/token.png" class="token-21 coin"></td>
+                  <td class="box box22" onclick="dothis('2','2')"><img src="src/token.png" class="token-22 coin"></td>
+                  <td class="box box23" onclick="dothis('2','3')"><img src="src/token.png" class="token-23 coin"></td>
+                  <td class="box box24" onclick="dothis('2','4')"><img src="src/token.png" class="token-24 coin"></td>
+                  <td class="box box25" onclick="dothis('2','5')"><img src="src/token.png" class="token-25 coin"></td>
+                  <td class="box box26" onclick="dothis('2','6')"><img src="src/token.png" class="token-26 coin"></td>
+                  <td class="box box27" onclick="dothis('2','7')"><img src="src/token.png" class="token-27 coin"></td>
+                  <td class="box box28" onclick="dothis('2','8')"><img src="src/token.png" class="token-28 coin"></td>
+                    
+                    
+                  </tr> <tr>
+                    <td class="box box31" onclick="dothis('3','1')"><img src="src/token.png" class="token-31 coin"></td>
+                    <td class="box box32" onclick="dothis('3','2')"><img src="src/token.png" class="token-32 coin"></td>
+                    <td class="box box33" onclick="dothis('3','3')"><img src="src/token.png" class="token-33 coin"></td>
+                    <td class="box box34" onclick="dothis('3','4')"><img src="src/token.png" class="token-34 coin"></td>
+                    <td class="box box35" onclick="dothis('3','5')"><img src="src/token.png" class="token-35 coin"></td>
+                    <td class="box box36" onclick="dothis('3','6')"><img src="src/token.png" class="token-36 coin"></td>
+                    <td class="box box37" onclick="dothis('3','7')"><img src="src/token.png" class="token-37 coin"></td>
+                    <td class="box box38" onclick="dothis('3','8')"><img src="src/token.png" class="token-38 coin"></td>
+                    
+                  </tr> <tr>
+                    <td class="box box41" onclick="dothis('4','1')"><img src="src/token.png" class="token-41 coin"></td>
+                    <td class="box box42" onclick="dothis('4','2')"><img src="src/token.png" class="token-42 coin"></td>
+                    <td class="box box43" onclick="dothis('4','3')"><img src="src/token.png" class="token-43 coin"></td>
+                    <td class="box box44" onclick="dothis('4','4')"><img src="src/token.png" class="token-44 coin"></td>
+                    <td class="box box45" onclick="dothis('4','5')"><img src="src/token.png" class="token-45 coin"></td>
+                    <td class="box box46" onclick="dothis('4','6')"><img src="src/token.png" class="token-46 coin"></td>
+                    <td class="box box47" onclick="dothis('4','7')"><img src="src/token.png" class="token-47 coin"></td>
+                    <td class="box box48" onclick="dothis('4','8')"><img src="src/token.png" class="token-48 coin"></td>
+
+                  </tr> <tr>
+                   
+                    <td class="box box51" onclick="dothis('5','1')"><img src="src/token.png" class="token-51 coin"></td>
+                    <td class="box box52" onclick="dothis('5','2')"><img src="src/token.png" class="token-52 coin"></td>
+                    <td class="box box53" onclick="dothis('5','3')"><img src="src/token.png" class="token-53 coin"></td>
+                    <td class="box box54" onclick="dothis('5','4')"><img src="src/token.png" class="token-54 coin"></td>
+                    <td class="box box55" onclick="dothis('5','5')"><img src="src/token.png" class="token-55 coin"></td>
+                    <td class="box box56" onclick="dothis('5','6')"><img src="src/token.png" class="token-56 coin"></td>
+                    <td class="box box57" onclick="dothis('5','7')"><img src="src/token.png" class="token-57 coin"></td>
+                    <td class="box box58" onclick="dothis('5','8')"><img src="src/token.png" class="token-58 coin"></td>
+
+                  </tr> <tr>
+                    
+                    <td class="box box61" onclick="dothis('6','1')"><img src="src/token.png" class="token-61 coin"></td>
+                    <td class="box box62" onclick="dothis('6','2')"><img src="src/token.png" class="token-62 coin"></td>
+                    <td class="box box63" onclick="dothis('6','3')"><img src="src/token.png" class="token-63 coin"></td>
+                    <td class="box box64" onclick="dothis('6','4')"><img src="src/token.png" class="token-64 coin"></td>
+                    <td class="box box65" onclick="dothis('6','5')"><img src="src/token.png" class="token-65 coin"></td>
+                    <td class="box box66" onclick="dothis('6','6')"><img src="src/token.png" class="token-66 coin"></td>
+                    <td class="box box67" onclick="dothis('6','7')"><img src="src/token.png" class="token-67 coin"></td>
+                    <td class="box box68" onclick="dothis('6','8')"><img src="src/token.png" class="token-68 coin"></td>
+
+                  </tr> <tr>
+
+                    <td class="box box71" onclick="dothis('7','1')"><img src="src/token.png" class="token-71 coin"></td>
+                    <td class="box box72" onclick="dothis('7','2')"><img src="src/token.png" class="token-72 coin"></td>
+                    <td class="box box73" onclick="dothis('7','3')"><img src="src/token.png" class="token-73 coin"></td>
+                    <td class="box box74" onclick="dothis('7','4')"><img src="src/token.png" class="token-74 coin"></td>
+                    <td class="box box75" onclick="dothis('7','5')"><img src="src/token.png" class="token-75 coin"></td>
+                    <td class="box box76" onclick="dothis('7','6')"><img src="src/token.png" class="token-76 coin"></td>
+                    <td class="box box77" onclick="dothis('7','7')"><img src="src/token.png" class="token-77 coin"></td>
+                    <td class="box box78" onclick="dothis('7','8')"><img src="src/token.png" class="token-78 coin"></td>
+                  </tr> <tr>
+                    
+                    <td class="box box81 End" onclick="dothis('8','1')"><img src="src/token.png" class="token-81 coin"></td>
+                    <td class="box box82" onclick="dothis('8','2')"><img src="src/token.png" class="token-82 coin"></td>
+                    <td class="box box83" onclick="dothis('8','3')"><img src="src/token.png" class="token-83 coin"></td>
+                    <td class="box box84" onclick="dothis('8','4')"><img src="src/token.png" class="token-84 coin"></td>
+                    <td class="box box85" onclick="dothis('8','5')"><img src="src/token.png" class="token-85 coin"></td>
+                    <td class="box box86" onclick="dothis('8','6')"><img src="src/token.png" class="token-86 coin"></td>
+                    <td class="box box87" onclick="dothis('8','7')"><img src="src/token.png" class="token-87 coin"></td>
+                    <td class="box box88" onclick="dothis('8','8')"><img src="src/token.png" class="token-88 coin"></td>
+
+                  </tr>
+              </table> 
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
