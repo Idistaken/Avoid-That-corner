@@ -11,6 +11,13 @@
     </head>
 
     <body>
+        <script>
+            function playAudio(url) {
+                new Audio(url).play();
+                setTimeout(() => { window.location = "game.html"; }, 300);
+            }
+          </script>
+      
        
        <p>Avoid That Corner</p>
       
@@ -21,7 +28,7 @@
        <div id="rule2"><p class="r1">RULE 2: To move the token, a player picks one direction - WEST, SOUTHWEST, SOUTH and moves the token in that direction as many places they'd like. </p> </div>
        <div id="rule3"><p class="r1">RULE 3: The player who moves the token into the Bottom-Left RED grid loses the Game </p> </div>
        <div id="rule4">
-           <div id="go">Let's Go</div> 
+           <div id="go">Let's Go</div>
            <!-- <div> <img src="go.png"> </div> -->
         </div>
        <div id="rule5">
@@ -30,7 +37,8 @@
            <div ><img src="src/south.png" class="img"></div> 
        </div>
        
-       <a href="game.html"><div id="start">start</div></a>
+        <!-- <a href="game.html" onclick="playAudio('src/click.mp3')"><div id="start">start</div></a> -->
+        <div id="start" onclick="playAudio('src/click.mp3')">start</div>
 
     </body>
 </html>

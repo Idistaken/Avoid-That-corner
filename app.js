@@ -1,11 +1,9 @@
 
+// playing sounds
+function playAudio(url) {
+    new Audio(url).play();
+  }
 
-// var activeButton=document.getElementById('box').value;//Math.floor(Math.random()*64)+1;
-// console.log(activeButton);
-//document.querySelector('.token-'+activeButton).style.display='block';
-// document.querySelector('.box-'+activeButton).addEventListener('click',function(){
-//     document.querySelector('.token-'+activeButton).style.display='block';
-// });
 var previousButton=[-1,-1];
 var activeButton,imgCharacter=[-1,-1];
 var turn,Player=['A','B'],plr=0;
@@ -16,6 +14,7 @@ function setPlayerImg(a,p)
  
     // select character
   document.getElementById("player2").innerHTML ="Player 2";
+  playAudio('src/click.mp3');
 
 }
  
@@ -32,16 +31,19 @@ function selectChar(v){
    {setPlayerImg(v,plr);
     plr++;
     }else{
-        swal("Same Avatar","player 2 can not have same avatar","error");}
-        
+        swal("Same Avatar","player 2 can not have same avatar","error");
+        playAudio('src/Alert.mp3');}
+
 }
 else{
     // console.log('can select only 2 avatar');
     swal("Oops", "you can select only 2 avatar", "error");
+    playAudio('src/Alert.mp3');
 }
 }
 
 document.querySelector('.start-btn').addEventListener('click',function(){
+    playAudio('src/click.mp3');
 if(imgCharacter[0] != '-1' && imgCharacter[1] != '-1'){
     document.querySelector('.start').style.display='none';
     document.querySelector('.wrapper').style.display='block';
@@ -56,7 +58,8 @@ if(imgCharacter[0] != '-1' && imgCharacter[1] != '-1'){
     initial();}
     else{
         // console.log('character not selected');
-        swal("Oops", "Avatar not selected", "error");   
+        swal("Oops", "Avatar not selected", "error");
+        playAudio('src/Alert.mp3');   
     }
     
 });
@@ -95,6 +98,7 @@ if(previousButton[0] === -1 && previousButton[1] === -1){
       if(x<3 || y>6)
       {document.querySelector('.token-'+x+y).style.display='block';
       previousButton=activeButton;
+      playAudio('src/token.mp3');
       looses();
 
       //activating box
@@ -106,7 +110,8 @@ if(previousButton[0] === -1 && previousButton[1] === -1){
      }
       else{
         //   alert(' start with  active section');
-        swal("Not allowed", "start with  active section", "error");   
+        swal("Not allowed", "start with  active section", "error");
+        playAudio('src/Alert.mp3');   
       }
         
 }
@@ -116,11 +121,13 @@ else if(( x > previousButton[0] &&  y < previousButton[1] ) || ( x > previousBut
           document.querySelector('.token-'+x+y).style.display='block';
           document.querySelector('.token-'+previousButton[0]+previousButton[1]).style.display='none';
           previousButton=activeButton; 
+          playAudio('src/token.mp3');
           looses();
         }
         else{
             // console.log('can\'t move in that direction');
-            swal("Not allowed", "can't move in that direction", "error");   
+            swal("Not allowed", "can't move in that direction", "error");
+            playAudio('src/Alert.mp3');  
         }
        }
        else{
@@ -128,11 +135,12 @@ else if(( x > previousButton[0] &&  y < previousButton[1] ) || ( x > previousBut
         document.querySelector('.token-'+x+y).style.display='block';
         document.querySelector('.token-'+previousButton[0]+previousButton[1]).style.display='none';
         previousButton=activeButton; 
-       
+        playAudio('src/token.mp3');
         looses(); }
          
     }else{
-        swal("Not allowed", "can't move in that direction", "error");   
+        swal("Not allowed", "can't move in that direction", "error"); 
+        playAudio('src/Alert.mp3');  
     }
   
 }
@@ -177,10 +185,12 @@ function reset(){   // display start menu
                     document.getElementById("player2").innerHTML ="Player 1";
                     imgCharacter=[-1,-1]; plr=0; 
 }
-function winner(){
+function winner(){   
                      document.querySelector('.wrapper').style.display='none';
                      document.querySelector('.WinLose').style.display='block';
                      turn === 2 ? turn=1 : turn =2;
                      document.querySelector('#p').src='src/img'+imgCharacter[turn-1]+".png"; 
                      document.getElementById("win").innerHTML ="Player "+turn+" Winner !";
+
+                     playAudio('src/winner.mp3');
 }
