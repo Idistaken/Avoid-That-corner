@@ -28,8 +28,12 @@ function selectChar(v){
     {document.querySelector('.c'+v).style.backgroundColor='#EA2234';
     document.querySelector('.c'+v).style.boxShadow ='10px 20px 40px #D93F0F';
    
-   setPlayerImg(v,plr);
+   if(plr == 0 || v !== imgCharacter[0])
+   {setPlayerImg(v,plr);
     plr++;
+    }else{
+        swal("Same Avatar","player 2 can not have same avatar","error");}
+        
 }
 else{
     // console.log('can select only 2 avatar');
