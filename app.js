@@ -43,7 +43,7 @@ else{
 }
 
 document.querySelector('.start-btn').addEventListener('click',function(){
-    playAudio('src/click.mp3');
+    
 if(imgCharacter[0] != '-1' && imgCharacter[1] != '-1'){
     document.querySelector('.start').style.display='none';
     document.querySelector('.wrapper').style.display='block';
@@ -54,7 +54,7 @@ if(imgCharacter[0] != '-1' && imgCharacter[1] != '-1'){
         if(i!==8 ||j!== 1)
         document.querySelector('.box'+i+j).style.background='#BEAEB7';  /*console.log('box'+i+j);*/}
     }
-
+    playAudio('src/click.mp3');
     initial();}
     else{
         // console.log('character not selected');
